@@ -1,0 +1,34 @@
+$Inder: 'Inder', sans-serif;
+$ABeeZee: 'ABeeZee', sans-serif;
+$ConcertOne: 'Concert One', cursive;
+$Sniglet: 'Sniglet', cursive;
+$Roboto: 'Roboto', sans-serif;
+
+.header {
+  background-color: DeepSkyBlue;
+  color: white;
+  ul li {
+    list-style: none;
+  }
+}
+
+.footer {
+  background-color: WhiteSmoke;
+
+}
+
+.brand {
+  font-family: $ABeeZee;
+  font-size: 1.7em;
+  padding-top: 8px;
+}
+
+.header-links {
+  padding: 15px 35px 0px 0px;
+  font-size: 1.2em;
+}
+
+.container-inner {
+  width: 100%;
+
+}
