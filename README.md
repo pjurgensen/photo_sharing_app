@@ -1,6 +1,7 @@
 #Photo sharing app
 ##Epicodus bootcamp exercise Rails 4
-###Brentwood Reid and Patti Jurgensen
+###Brentwood Reid and Patti Jurgensen Day 1
+###Kathryn Hough and Patti Jurgensen Day 2
 
 This is an app that lets users upload their photos to share with the world.
 
