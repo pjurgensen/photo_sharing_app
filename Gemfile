@@ -9,6 +9,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'paperclip'
 gem 'bootstrap-sass'
+gem 'bcrypt'
 
 group :development do
   gem 'better_errors'
@@ -19,6 +20,7 @@ end
 group :test, :development do
   gem 'rspec-rails'
   gem 'capybara'
+  gem 'factory_girl'
   gem 'pry'
 end
 

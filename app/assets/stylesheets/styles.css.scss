@@ -1,8 +1,10 @@
 $Inder: 'Inder', sans-serif;
-$ABeeZee: 'ABeeZee', sans-serif;
+$Main-Font: 'ABeeZee', sans-serif;
 $ConcertOne: 'Concert One', cursive;
 $Sniglet: 'Sniglet', cursive;
 $Roboto: 'Roboto', sans-serif;
+
+/* Header =================================================================== */
 
 .header {
   background-color: DeepSkyBlue;
@@ -12,15 +14,21 @@ $Roboto: 'Roboto', sans-serif;
   }
 }
 
-.footer {
-  background-color: WhiteSmoke;
-
-}
-
 .brand {
-  font-family: $ABeeZee;
+  font-family: $Main-Font;
   font-size: 1.7em;
   padding-top: 8px;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  a:hover {
+    color: Purple;
+    text-decoration: none;
+  }
+  li {
+    display: inline;
+  }
 }
 
 .header-links {
@@ -34,9 +42,76 @@ $Roboto: 'Roboto', sans-serif;
     color: Purple;
     text-decoration: none;
   }
+  li {
+    display: inline;
+    margin-left: 10px;
+  }
+}
+
+.purple {
+  color: Purple;
 }
 
 .container-inner {
   width: 100%;
 
+}
+
+/* Body =================================================================== */
+
+.flash {
+  margin-top: 60px;
+  right: 0px;
+  font-size: 2em;
+  .green {
+    list-style: none;
+    color: #60b044;
+  }
+}
+
+.red {
+  list-style: none;
+  color: Red;
+}
+
+.main-page {
+  margin: 0 auto;
+  margin-top: 150px;
+  text-align: center;
+  h1 {
+    font-family: $Main-Font;
+    font-size: 3.5em;
+  }
+  .happy-couple {
+    border: 1px solid DeepSkyBlue;
+  }
+  .signup-button {
+    padding: 20px 30px;
+    background-color: #60b044;
+    color: white;
+    font-size: 1.5em;
+    margin-top: 20px;
+  }
+}
+
+.input-page {
+  margin: 0 auto;
+  margin-top: 50px;
+  .form-control {
+    width: 30%;
+  }
+  .actions {
+    margin-top: 10px;
+  }
+}
+
+.user-page {
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+/* Footer =================================================================== */
+
+.footer {
+  background-color: WhiteSmoke;
 }

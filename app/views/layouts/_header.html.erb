@@ -1,10 +1,15 @@
 <div class="header navbar navbar-fixed-top">
   <div class="container-inner">
     <ul class="brand pull-left">
-      <li>Photastic</li>
+      <li><%= link_to "Photastic", root_path %></li>
     </ul>
     <ul class="header-links pull-right">
-      <li><%= link_to "Sign in", '#' %></li>
+      <% if current_user %>
+        <li>Logged in as <span class="purple"><%= current_user.email %></span></li>
+        <li><%= link_to "Log Out", logout_path %></li>
+      <% else %>
+        <li><%= link_to "Sign In", login_path %></li>
+      <% end %>
     </ul>
   </div>
 </div>
