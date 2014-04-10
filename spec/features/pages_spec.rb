@@ -9,7 +9,7 @@ describe 'when a user goes to the homepage' do
     end
 
     it 'has "Sign in" as the sign in link' do
-      page.should have_link "Sign in"
+      page.should have_link "Sign In"
     end
   end
 

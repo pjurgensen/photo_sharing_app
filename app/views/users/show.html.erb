@@ -1,4 +1,8 @@
 <div class="user-page container">
   <h1>Welcome <%= @user.email %></h1>
 
+    <%= image_tag @user.avatar.url(:medium, class: "user-avatar") %>
+
+  <hr>
+
 </div>

@@ -7,5 +7,6 @@ PhotoShare::Application.routes.draw do
 
   resources :users
   resources :sessions
+  resources :photos
 
 end
