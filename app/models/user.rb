@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
-has_secure_password
-has_attached_file :avatar, :styles => { :medium => "300x300>", :thumb => "100x100>" }, :default_url => "sad_panda.jpg"
-
+  has_secure_password
+  has_attached_file :avatar, :styles => { :medium => "300x300>", :thumb => "100x100>" }, :default_url => "sad_panda.jpg"
+  has_and_belongs_to_many :photos
 
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   validates :email,

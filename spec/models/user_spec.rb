@@ -10,6 +10,8 @@ describe User do
   it { should validate_attachment_content_type(:avatar).
                 allowing('image/png', 'image/gif', 'image/jpg').
                 rejecting('text/plain', 'text/xml') }
+  it { should have_and_belong_to_many :photos }
+end
+
   #it { should validate_attachment_size(:avatar).
                 #in(0..2.megabytes) }
-end

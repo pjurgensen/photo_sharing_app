@@ -10,6 +10,7 @@ gem 'turbolinks'
 gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 gem 'bootstrap-sass'
 gem 'bcrypt'
+gem 'masonry-rails'
 
 group :development do
   gem 'better_errors'
