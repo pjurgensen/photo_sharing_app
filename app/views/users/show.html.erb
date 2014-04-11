@@ -14,36 +14,19 @@
   </div>
   <hr>
 
-  <div id="masonry-container" class="transitions-enabled infinite-scroll clearfix">
-
-    <div class="box col3">
-
-    <div class="box col1">
-      <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. </p>
+  <div id="wrapper">
+    <div id="list">
+      <% current_user.photos.each do |photo| %>
+        <div class="item text-center">
+          <br />
+          <%= image_tag photo.image.url(:medium), class: "pinterist-photo", height: '100%', width: '100%' %>
+          <br />
+          <%= photo.description %>
+        </div>
+      <% end %>
     </div>
-
-    <div class="box col2">
-      <p>
-        <a href="http://www.flickr.com/photos/nemoorange/3319714470/" title="Whitlow's on Wilson by nemoorange, on Flickr"><img src="http://farm4.static.flickr.com/3008/3319714470_c05a5cb5a8_m.jpg" alt="Whitlow's on Wilson" /></a>
-      </p>
-    </div>
-    ...
   </div>
-  <div id="masonry-container" class="transitions-enabled infinite-scroll clearfix">
 
-    <div class="box col3">
-
-    <div class="box col1">
-      <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. </p>
-    </div>
-
-    <div class="box col2">
-      <p>
-        <a href="http://www.flickr.com/photos/nemoorange/3319714470/" title="Whitlow's on Wilson by nemoorange, on Flickr"><img src="http://farm4.static.flickr.com/3008/3319714470_c05a5cb5a8_m.jpg" alt="Whitlow's on Wilson" /></a>
-      </p>
-    </div>
-    ...
-  </div>
 </div>
 
 

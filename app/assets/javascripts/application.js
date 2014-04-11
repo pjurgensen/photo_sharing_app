@@ -11,8 +11,8 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
-//= require turbolinks
 //= require_tree .
 //= require bootstrap
 //= require masonry/jquery.masonry
@@ -20,3 +20,11 @@
 //= require masonry/jquery.imagesloaded.min
 //= require masonry/jquery.infinitescroll.min
 //= require masonry/modernizr-transitions
+
+
+$( window ).load( function()
+{
+    $( '#list' ).masonry( { itemSelector: '.item' } );
+});
+
+//= require turbolinks

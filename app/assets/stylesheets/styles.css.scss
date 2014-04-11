@@ -117,32 +117,35 @@ $Roboto: 'Roboto', sans-serif;
   }
 }
 
-#masonry-container {
-  background: #FFF;
-  padding: 5px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  clear: both;
-  -webkit-border-radius: 5px;
-     -moz-border-radius: 5px;
-          border-radius: 5px;
+#wrapper
+{
+    max-width: 90em; /* 960 px */
+    margin: 0 auto;
 }
-
-.clearfix:before, .clearfix:after { content: ""; display: table; }
-.clearfix:after { clear: both; }
-.clearfix { zoom: 1; }
-
-.col1 { width: 80px; }
-.col2 { width: 180px; }
-.col3 { width: 280px; }
-.col4 { width: 380px; }
-.col5 { width: 480px; }
-
-.col1 img { max-width: 80px; }
-.col2 img { max-width: 180px; }
-.col3 img { max-width: 280px; }
-.col4 img { max-width: 380px; }
-.col5 img { max-width: 480px; }
+    #list
+    {
+        width: 110%; /* 990px */
+        overflow: hidden;
+        margin-left: -1.562%; /* 15px */
+        margin-bottom: -1.875em; /* 30px */
+    }
+        .item
+        {
+            width: 30.303%; /* 300px */
+            float: left;
+            margin: 0 1.515% 1.875em; /* 15px 30px */
+            margin-bottom: 30px;
+            background-color: DeepSkyBlue;
+            color: White;
+            border: 1px solid Purple;
+            font-size: 16px;
+            font-weight: 300;
+            .pinterist-photo {
+              text-align: center;
+              border-top: 1px solid Purple;
+              border-bottom: 1px solid Purple;
+            }
+        }
 
 
 /* Footer =================================================================== */

@@ -6,6 +6,7 @@ class PhotosController < ApplicationController
 
   def create
     @photo = Photo.new(photo_params)
+    current_user.photos << @photo
     if @photo.save
       flash[:notice] = "Your photo has been added!"
       redirect_to photo_path(@photo)
